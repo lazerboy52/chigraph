@@ -2,6 +2,7 @@ var searchData=
 [
   ['nlohmann',['nlohmann',['../namespacenlohmann.html',1,'']]],
   ['nodeinstance',['NodeInstance',['../structchig_1_1NodeInstance.html',1,'chig']]],
+  ['nodes',['nodes',['../structchig_1_1GraphFunction.html#a03f585c2f2dbf9ee68bb418a123f3ee4',1,'chig::GraphFunction::nodes()'],['../structchig_1_1ImportedModule.html#a0d8fc27a402b351ae0785a2527513f8b',1,'chig::ImportedModule::nodes()']]],
   ['nodetype',['NodeType',['../structchig_1_1NodeType.html',1,'chig']]],
   ['null',['null',['../classnlohmann_1_1basic__json.html#a231b02148577b69a154b2ce2c87a5522a37a6259cc0c1dae299a7866489dff0bd',1,'nlohmann::basic_json']]],
   ['number_5ffloat',['number_float',['../classnlohmann_1_1basic__json.html#a231b02148577b69a154b2ce2c87a5522ad9966ecb59667235a57b4b999a649eef',1,'nlohmann::basic_json']]],

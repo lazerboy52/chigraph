@@ -96,6 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">chig::Context Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The class that handles modules It also stores a <code>LLVMContext</code> object to be used everywhere.  
+ <a href="structchig_1_1Context.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Context_8hpp_source.html">Context.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -121,16 +126,17 @@ Public Attributes</h2></td></tr>
 llvm::LLVMContext&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
 <tr class="separator:af7adb944027816edf8594a549f03329f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2076cda3df5c7fd91902174823ce3a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2076cda3df5c7fd91902174823ce3a6"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1ImportedModule.html">ImportedModule</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>modules</b></td></tr>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1ImportedModule.html">ImportedModule</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1Context.html#ae2076cda3df5c7fd91902174823ce3a6">modules</a></td></tr>
+<tr class="memdesc:ae2076cda3df5c7fd91902174823ce3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LLVM context to use with everything under the context. <br /></td></tr>
 <tr class="separator:ae2076cda3df5c7fd91902174823ce3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadba23aee4fb5d63561d927ccf4c2b9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadba23aee4fb5d63561d927ccf4c2b9f"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>searchPaths</b></td></tr>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1Context.html#aadba23aee4fb5d63561d927ccf4c2b9f">searchPaths</a></td></tr>
+<tr class="memdesc:aadba23aee4fb5d63561d927ccf4c2b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The modules that have been loaded. <br /></td></tr>
 <tr class="separator:aadba23aee4fb5d63561d927ccf4c2b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6b05e5e072c42204e9a894aba0f4ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e6b05e5e072c42204e9a894aba0f4ef"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1NodeType.html">NodeType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>langNodeTypes</b></td></tr>
-<tr class="separator:a5e6b05e5e072c42204e9a894aba0f4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The class that handles modules It also stores a <code>LLVMContext</code> object to be used everywhere. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a66800b86891c56107ceb12d77d5a4917"></a>
 <div class="memitem">
 <div class="memproto">

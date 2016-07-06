@@ -97,26 +97,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">chig::GraphFunction Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>this is an AST-like representation of a function in a graph It is used for IDE-like behavior, codegen, and JSON generation.  
+ <a href="structchig_1_1GraphFunction.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="GraphFunction_8hpp_source.html">GraphFunction.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a70b9a1fc62ad8c98b8cddf8575d4b3af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70b9a1fc62ad8c98b8cddf8575d4b3af"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GraphFunction</b> (std::string name, const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;inputs, const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;outputs)</td></tr>
+<tr class="memitem:a70b9a1fc62ad8c98b8cddf8575d4b3af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#a70b9a1fc62ad8c98b8cddf8575d4b3af">GraphFunction</a> (std::string name, const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;inputs, const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;<a class="el" href="structchig_1_1GraphFunction.html#aa1f58f204cc9fa07af55349d9751a9bd">outputs</a>)</td></tr>
+<tr class="memdesc:a70b9a1fc62ad8c98b8cddf8575d4b3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the graph Also constructs a input node.  <a href="#a70b9a1fc62ad8c98b8cddf8575d4b3af">More...</a><br /></td></tr>
 <tr class="separator:a70b9a1fc62ad8c98b8cddf8575d4b3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a588676cdb4f27967edfb2112354f2915"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a588676cdb4f27967edfb2112354f2915"></a>
-<a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><b>toJSON</b> ()</td></tr>
+<tr class="memitem:a588676cdb4f27967edfb2112354f2915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#a588676cdb4f27967edfb2112354f2915">toJSON</a> ()</td></tr>
+<tr class="memdesc:a588676cdb4f27967edfb2112354f2915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the <a class="el" href="structchig_1_1GraphFunction.html" title="this is an AST-like representation of a function in a graph It is used for IDE-like behavior...">GraphFunction</a> to JSON.  <a href="#a588676cdb4f27967edfb2112354f2915">More...</a><br /></td></tr>
 <tr class="separator:a588676cdb4f27967edfb2112354f2915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71856cbaf645e4bb58f94d106a261c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af71856cbaf645e4bb58f94d106a261c2"></a>
-llvm::Module *&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> ()</td></tr>
-<tr class="separator:af71856cbaf645e4bb58f94d106a261c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b6f656b0a5e6435a6f7061004c4827"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b6f656b0a5e6435a6f7061004c4827"></a>
-<a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>insertNode</b> (<a class="el" href="structchig_1_1NodeType.html">NodeType</a> *type, float x, float y)</td></tr>
+<tr class="memitem:aba8ebb09829642fc2b3ac6d083de9e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba8ebb09829642fc2b3ac6d083de9e85"></a>
+llvm::Function *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#aba8ebb09829642fc2b3ac6d083de9e85">compile</a> ()</td></tr>
+<tr class="memdesc:aba8ebb09829642fc2b3ac6d083de9e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile the graph to an <code>llvm::Function</code>. <br /></td></tr>
+<tr class="separator:aba8ebb09829642fc2b3ac6d083de9e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b6f656b0a5e6435a6f7061004c4827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#a54b6f656b0a5e6435a6f7061004c4827">insertNode</a> (<a class="el" href="structchig_1_1NodeType.html">NodeType</a> *type, float x, float y)</td></tr>
+<tr class="memdesc:a54b6f656b0a5e6435a6f7061004c4827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a node to the graph.  <a href="#a54b6f656b0a5e6435a6f7061004c4827">More...</a><br /></td></tr>
 <tr class="separator:a54b6f656b0a5e6435a6f7061004c4827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abdb6f9717e7614417fd5eefd37e140eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb6f9717e7614417fd5eefd37e140eb"></a>
-static <a class="el" href="structchig_1_1GraphFunction.html">GraphFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fromJSON</b> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j)</td></tr>
+<tr class="memitem:abdb6f9717e7614417fd5eefd37e140eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structchig_1_1GraphFunction.html">GraphFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#abdb6f9717e7614417fd5eefd37e140eb">fromJSON</a> (const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;j)</td></tr>
+<tr class="memdesc:abdb6f9717e7614417fd5eefd37e140eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structchig_1_1GraphFunction.html" title="this is an AST-like representation of a function in a graph It is used for IDE-like behavior...">GraphFunction</a> from a JOSN object.  <a href="#abdb6f9717e7614417fd5eefd37e140eb">More...</a><br /></td></tr>
 <tr class="separator:abdb6f9717e7614417fd5eefd37e140eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -125,15 +131,157 @@ Public Attributes</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>graphName</b></td></tr>
 <tr class="separator:a3284b15956ce7940a950b706b1b4a8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03f585c2f2dbf9ee68bb418a123f3ee4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03f585c2f2dbf9ee68bb418a123f3ee4"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>nodes</b></td></tr>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#a03f585c2f2dbf9ee68bb418a123f3ee4">nodes</a></td></tr>
+<tr class="memdesc:a03f585c2f2dbf9ee68bb418a123f3ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the name of the function <br /></td></tr>
 <tr class="separator:a03f585c2f2dbf9ee68bb418a123f3ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbca89852405f5dd81141dbd1d4010b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbca89852405f5dd81141dbd1d4010b2"></a>
-<a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>entry</b></td></tr>
+<a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#abbca89852405f5dd81141dbd1d4010b2">entry</a></td></tr>
+<tr class="memdesc:abbca89852405f5dd81141dbd1d4010b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for the nodes. <br /></td></tr>
 <tr class="separator:abbca89852405f5dd81141dbd1d4010b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f58f204cc9fa07af55349d9751a9bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1f58f204cc9fa07af55349d9751a9bd"></a>
-std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b></td></tr>
+std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1GraphFunction.html#aa1f58f204cc9fa07af55349d9751a9bd">outputs</a></td></tr>
+<tr class="memdesc:aa1f58f204cc9fa07af55349d9751a9bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience pointer holding the entry point of the function. <br /></td></tr>
 <tr class="separator:aa1f58f204cc9fa07af55349d9751a9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>this is an AST-like representation of a function in a graph It is used for IDE-like behavior, codegen, and JSON generation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a70b9a1fc62ad8c98b8cddf8575d4b3af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GraphFunction::GraphFunction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; llvm::Type *, std::string &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>outputs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the graph Also constructs a input node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the function </td></tr>
+    <tr><td class="paramname">inputs</td><td>The types and descriptions of the inputs </td></tr>
+    <tr><td class="paramname">outputs</td><td>The types and descriptions of the outputs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abdb6f9717e7614417fd5eefd37e140eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structchig_1_1GraphFunction.html">GraphFunction</a> GraphFunction::fromJSON </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> &amp;&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structchig_1_1GraphFunction.html" title="this is an AST-like representation of a function in a graph It is used for IDE-like behavior...">GraphFunction</a> from a JOSN object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>The JSON object to read from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="structchig_1_1GraphFunction.html" title="this is an AST-like representation of a function in a graph It is used for IDE-like behavior...">GraphFunction</a> that has been produced </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54b6f656b0a5e6435a6f7061004c4827"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structchig_1_1NodeInstance.html">NodeInstance</a> * GraphFunction::insertNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structchig_1_1NodeType.html">NodeType</a> *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a node to the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the node </td></tr>
+    <tr><td class="paramname">x</td><td>The x location of the node </td></tr>
+    <tr><td class="paramname">y</td><td>The y location of the node </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a588676cdb4f27967edfb2112354f2915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> GraphFunction::toJSON </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize the <a class="el" href="structchig_1_1GraphFunction.html" title="this is an AST-like representation of a function in a graph It is used for IDE-like behavior...">GraphFunction</a> to JSON. </p>
+<dl class="section return"><dt>Returns</dt><dd>The JSON object representing the graph </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>chig/include/chig/<a class="el" href="GraphFunction_8hpp_source.html">GraphFunction.hpp</a></li>
 <li>chig/src/GraphFunction.cpp</li>

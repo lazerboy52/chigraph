@@ -96,11 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">chig::ImportedModule Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A module imported from a <code>llvm::Module*</code> Finds the nodes in an <code>llvm::Module*</code> and exposes them.  
+ <a href="structchig_1_1ImportedModule.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ImportedModule_8hpp_source.html">ImportedModule.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab0d131f9230b24f4e4c13c5237ce0e2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0d131f9230b24f4e4c13c5237ce0e2d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImportedModule</b> (std::unique_ptr&lt; llvm::Module &gt; module)</td></tr>
+<tr class="memitem:ab0d131f9230b24f4e4c13c5237ce0e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1ImportedModule.html#ab0d131f9230b24f4e4c13c5237ce0e2d">ImportedModule</a> (std::unique_ptr&lt; llvm::Module &gt; module)</td></tr>
+<tr class="memdesc:ab0d131f9230b24f4e4c13c5237ce0e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <code><a class="el" href="structchig_1_1ImportedModule.html" title="A module imported from a llvm::Module* Finds the nodes in an llvm::Module* and exposes them...">ImportedModule</a></code> from a llvm::Module*.  <a href="#ab0d131f9230b24f4e4c13c5237ce0e2d">More...</a><br /></td></tr>
 <tr class="separator:ab0d131f9230b24f4e4c13c5237ce0e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -109,9 +114,32 @@ Public Attributes</h2></td></tr>
 std::unique_ptr&lt; llvm::Module &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>module</b></td></tr>
 <tr class="separator:a040af644eee9a252def69dac275f0eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8fc27a402b351ae0785a2527513f8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d8fc27a402b351ae0785a2527513f8b"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1NodeType.html">NodeType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>nodes</b></td></tr>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="structchig_1_1NodeType.html">NodeType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchig_1_1ImportedModule.html#a0d8fc27a402b351ae0785a2527513f8b">nodes</a></td></tr>
+<tr class="memdesc:a0d8fc27a402b351ae0785a2527513f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>llvm::Module</code> that it represents. <br /></td></tr>
 <tr class="separator:a0d8fc27a402b351ae0785a2527513f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A module imported from a <code>llvm::Module*</code> Finds the nodes in an <code>llvm::Module*</code> and exposes them. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab0d131f9230b24f4e4c13c5237ce0e2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImportedModule::ImportedModule </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; llvm::Module &gt;&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a <code><a class="el" href="structchig_1_1ImportedModule.html" title="A module imported from a llvm::Module* Finds the nodes in an llvm::Module* and exposes them...">ImportedModule</a></code> from a llvm::Module*. </p>
+<p>This object will take exclusive ownership over the object </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>chig/include/chig/<a class="el" href="ImportedModule_8hpp_source.html">ImportedModule.hpp</a></li>
 <li>chig/src/ImportedModule.cpp</li>

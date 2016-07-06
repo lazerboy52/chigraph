@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['importedmodule',['ImportedModule',['../structchig_1_1ImportedModule.html#ab0d131f9230b24f4e4c13c5237ce0e2d',1,'chig::ImportedModule']]],
   ['insert',['insert',['../classnlohmann_1_1basic__json.html#a7f7bbb3a9efef2e2442f538a24c1c47b',1,'nlohmann::basic_json::insert(const_iterator pos, const basic_json &amp;val)'],['../classnlohmann_1_1basic__json.html#a8468efcfcd95db15f46887b29924ed5c',1,'nlohmann::basic_json::insert(const_iterator pos, basic_json &amp;&amp;val)'],['../classnlohmann_1_1basic__json.html#a624025acfcf64364d98424402b837bc6',1,'nlohmann::basic_json::insert(const_iterator pos, size_type cnt, const basic_json &amp;val)'],['../classnlohmann_1_1basic__json.html#aeaa0644fd6b99af364e772092268dfd6',1,'nlohmann::basic_json::insert(const_iterator pos, const_iterator first, const_iterator last)'],['../classnlohmann_1_1basic__json.html#aadb4e5be88221e5e28cdb752332f3d13',1,'nlohmann::basic_json::insert(const_iterator pos, std::initializer_list&lt; basic_json &gt; ilist)']]],
+  ['insertnode',['insertNode',['../structchig_1_1GraphFunction.html#a54b6f656b0a5e6435a6f7061004c4827',1,'chig::GraphFunction']]],
   ['is_5farray',['is_array',['../classnlohmann_1_1basic__json.html#a256a4cef002023acab3c9d75b569f54a',1,'nlohmann::basic_json']]],
   ['is_5fboolean',['is_boolean',['../classnlohmann_1_1basic__json.html#adade77415e7f7bf08a9b5150c742714d',1,'nlohmann::basic_json']]],
   ['is_5fdiscarded',['is_discarded',['../classnlohmann_1_1basic__json.html#a1002d187e05b5323bda5de124cbe95a8',1,'nlohmann::basic_json']]],
