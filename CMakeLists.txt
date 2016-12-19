@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.8)
 
 project(chigraph)
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
+
 # add the module dirs
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/third_party/kf5)
@@ -17,7 +21,6 @@ find_package(Boost REQUIRED system filesystem program_options)
 # disable tests
 set(BUILD_CLAR OFF CACHE BOOL "")
 add_subdirectory(third_party/libgit2)
-add_subdirectory(third_party/libexecstream)
 
 add_subdirectory(libchig)
 add_subdirectory(chig)

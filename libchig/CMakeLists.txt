@@ -38,11 +38,8 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.hpp.in ${CMAKE_BINARY_DIR}/chi
 
 target_include_directories(chigcore
 	PUBLIC
-	${LLVM_INCLUDE_DIRS}
-    ${Boost_INCLUDE_DIR}
 	include/
 	${CMAKE_BINARY_DIR}/
-	../third_party/GSL
 )
 
 target_compile_features(chigcore PUBLIC cxx_constexpr cxx_rvalue_references cxx_variable_templates)
