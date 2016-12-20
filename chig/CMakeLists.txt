@@ -13,4 +13,5 @@ target_link_libraries(chig
 PUBLIC
 	optimized ${Boost_PROGRAM_OPTIONS_LIBRARY_DEBUG}
 	debug ${Boost_PROGRAM_OPTIONS_LIBRARY_RELEASE}
+	${CONAN_LIBS}
 )

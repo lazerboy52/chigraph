@@ -7,7 +7,7 @@
 #include <chig/CModule.hpp>
 #include <chig/Config.hpp>
 
-#include <exec-stream.h>
+#include <libexecstream/exec-stream.h>
 
 #include <boost/filesystem.hpp>
 

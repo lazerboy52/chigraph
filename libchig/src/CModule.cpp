@@ -3,7 +3,7 @@
 
 #include <iterator>
 
-#include <exec-stream.h>
+#include <libexecstream/exec-stream.h>
 
 #include <llvm/Bitcode/ReaderWriter.h>
 #include <llvm/Linker/Linker.h>

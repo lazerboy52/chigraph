@@ -1,0 +1,15 @@
+[requires]
+Boost/1.60.0@lasote/stable
+llvm/3.8.0@smspillaz/stable
+clang/3.8.0@smspillaz/stable
+catch/1.3.0@TyRoXx/stable
+gsl/0.0.1@KindDragon/stable
+libexecstream/0.3.0@Manu343726/testing
+
+
+[generators]
+cmake
+
+[options]
+Boost:fPIC=True
+Boost:shared=True
