@@ -28,7 +28,7 @@ install:
 script:
   - mkdir build
   - cd build
-  - conan install .. -s compiler="$CXX_COMPILER" -s compiler.libcxx="libstdc++11" --build clang --build llvm -- build libexecstream --build compiler-rt --build libcxx -o build_type=$BUILD_TYPE 
+  - conan install .. -s compiler="$CXX_COMPILER" -s compiler.libcxx="libstdc++11" --build clang --build llvm --build libexecstream --build compiler-rt --build libcxx -o build_type=$BUILD_TYPE 
   - cmake .. -DCMAKE_CXX_COMPILER=$CXX_COMPILER -DCMAKE_C_COMPILER=$C_COMPILER
   - make -j`nproc`
   - make test
