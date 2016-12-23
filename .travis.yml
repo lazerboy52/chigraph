@@ -8,10 +8,10 @@ addons:
       - ubuntu-toolchain-r-test
 matrix: 
   include: 
-    - env: COMPILER=gcc         COMPILER_VER=5      QT_BASE=57 BUILD_TYPE=Debug
-    - env: COMPILER=gcc         COMPILER_VER=5      QT_BASE=57 BUILD_TYPE=Release
-    - env: COMPILER=gcc         COMPILER_VER=6      QT_BASE=57 BUILD_TYPE=Debug
-    - env: COMPILER=gcc         COMPILER_VER=6      QT_BASE=57 BUILD_TYPE=Release
+    - env: COMPILER=gcc         COMPILER_VER=5.4      QT_BASE=57 BUILD_TYPE=Debug
+    - env: COMPILER=gcc         COMPILER_VER=5.4      QT_BASE=57 BUILD_TYPE=Release
+    - env: COMPILER=gcc         COMPILER_VER=6.2      QT_BASE=57 BUILD_TYPE=Debug
+    - env: COMPILER=gcc         COMPILER_VER=6.2      QT_BASE=57 BUILD_TYPE=Release
     - env: COMPILER=clang         COMPILER_VER=3.8      QT_BASE=57 BUILD_TYPE=Debug
     - env: COMPILER=clang         COMPILER_VER=3.8      QT_BASE=57 BUILD_TYPE=Release
 
