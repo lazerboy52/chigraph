@@ -69,6 +69,13 @@ MainWindow::MainWindow(QWidget* parent) : KXmlGuiWindow(parent)
 	docker->setWidget(outputView);
 	addDockWidget(Qt::BottomDockWidgetArea, docker);
 
+    docker = new QDockWidget(i18n("Function Details"), this);
+    docker->setObjectName("Function Details");
+    funcDetails = new FunctionDetails;
+    docker->setWidget(funcDetails);
+    addDockWidget(Qt::RightDockWidgetArea, docker);
+    connect(this, &MainWindow::newFunctionOpened, funcDetails, &FunctionDetails::loadFunction);
+
 	setupActions();
 }
 
@@ -109,7 +116,7 @@ void MainWindow::setupActions()
 	newFunctionAction->setText(i18n("New Function"));
 	newFunctionAction->setIcon(QIcon::fromTheme("list-add"));
 	actColl->addAction(QStringLiteral("new-function"), newFunctionAction);
-	connect(newFunctionAction, &QAction::trigger, this, &MainWindow::newFunction);
+	connect(newFunctionAction, &QAction::triggered, this, &MainWindow::newFunction);
 
 	setupGUI(Default, ":/share/kxmlgui5/chiggui/chigguiui.rc");
 }
@@ -216,6 +223,8 @@ void MainWindow::newFunctionSelected(chig::GraphFunction* func)
 	openFunctions[qualifiedFunctionName] = view;
 	functabs->setTabText(idx, qualifiedFunctionName);
 	functabs->setCurrentWidget(view);
+
+    newFunctionOpened(func);
 }
 
 void MainWindow::closeTab(int idx)
@@ -273,4 +282,5 @@ void MainWindow::newFunction()
 	}
 
 	module->createFunction(newName.toStdString(), {}, {});  // TODO: inputs
+    functionpane->updateModule(module);
 }
